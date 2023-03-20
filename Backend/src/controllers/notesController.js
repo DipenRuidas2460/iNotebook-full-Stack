@@ -54,7 +54,6 @@ const getNotes = async (req, res) => {
 
         return res.json(notes)
     } catch (err) {
-        tes
         return res.status(500).send({ status: false, message: "Error", error: err.message })
     }
 }
